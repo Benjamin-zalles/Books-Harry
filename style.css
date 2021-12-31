@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&family=Roboto:wght@100;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    background: #f8f9fa;
+}
+
+.title {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 30px;
+}
+
+.title img {
+    width: 100%;
+    height: 100%;
+    filter: none;
+}
+
+.title img:hover {
+    filter: none;
+}
+.title h1 {
+    font-size: 9vw;
+}
+
+@media screen and(max-width: 300px) {
+    .title h1 {
+        font-size: 100px;
+    }
+}
+
+.harry {
+    color: #a38970;
+    animation-duration: 3s;
+    animation-name: colorTitle;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorTitle {
+    from {
+      color: #61416d;
+    }
+  
+    to {
+      color: #304d9e;
+    }
+  }
+
+.container {
+    max-width: 1250px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-gap: 50px;
+}
+
+.book {
+    background: #e9ecef;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+}
+
+.info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.info p {
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+}
+.info h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #514737;
+}
+
+.info h4 {
+    font-weight: 500;
+}
+
+.info span {
+    font-weight: 700;
+}
+
+.info a {
+    background: #e4cda4;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #7b644e;
+    border-radius: 10px;
+    transition: all 0.1;
+}
+
+.info a:hover {
+    background: #7c7164;
+    color: #e4cda4;
+}
+
+img {
+    width: 100%;
+    height:70%;
+    object-fit: cover;
+    filter: sepia(90%);
+    transition: all 0.1s ease-out;
+}
+
+img:hover {
+    filter: sepia(50%);
+}
